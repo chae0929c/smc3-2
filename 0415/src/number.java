@@ -11,16 +11,16 @@ public class number {
 		
 		while(true) {
 			count++;
-			System.out.println("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö) : ");
+			System.out.println("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€) : ");
 			input = sc.nextInt();
 			
 			for(int i = 0; i < 10; i++) {
 				rand[i] = (int)(Math.random() * 50 + 1);
 			if(input == rand[i]) {
 				System.out.println(rand[i] + " ");
-				System.out.println("´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù.");
+				System.out.println("ë‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤.");
 				}else if(input != rand[i]) {
-					System.out.println("²Î! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ¾ø½À´Ï´Ù.");
+					System.out.println("ê½! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ì—†ìŠµë‹ˆë‹¤.");
 				}
 			}
 		}
@@ -30,25 +30,25 @@ public class number {
 import java.util.Scanner;
 public class number {
 	public static void main(String args[]) {
-		System.out.println("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö) : ");
+		System.out.println("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€) : ");
 		Scanner sc = new Scanner(System.in);
 		
-		int num = sc.nextInt();//ÀÔ·Â°ª
-		int []arr = new int[10];//10°³ÀÇ ³­¼ö
-		int diff = 0;//´çÃ·,²Î ºñ±³ÇÔ¼ö
-		for(int i = 0; i<10; i++) {//1~50±îÁöÀÇ ¼ıÀÚÁß¿¡¼­ 10°³ÀÇ ³­¼ö¸¦ »ı¼º
-			arr[i]=(int)(Math.random()* 50+1);
+		int num = sc.nextInt();//ì…ë ¥ê°’
+		int []arr = new int[10];//10ê°œì˜ ë‚œìˆ˜
+		int diff = 0;//ë‹¹ì²¨,ê½ ë¹„êµí•¨ìˆ˜
+		for(int i = 0; i<10; i++) {//1~50ê¹Œì§€ì˜ ìˆ«ìì¤‘ì—ì„œ 10ê°œì˜ ë‚œìˆ˜ë¥¼ ìƒì„±
+			arr[i]=(int)(Math.random()* 50+1);//ë‚œìˆ˜ ìƒ
 			System.out.print(arr[i] + " ");
 		}
-		System.out.println();//ÁÙ¹Ù²Ş
+		System.out.println();//ì¤„ë°”ê¿ˆ
 		
-		for(int j = 0; j<10; j++) {//ÀÔ·Â ¼ıÀÚÁß¿¡ ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ´ÂÁö È®ÀÎ
-			if(arr[j] == num) {//ÀÔ·ÂµÈ ¼ıÀÚ¾È¿¡ ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖÀ¸¸é ´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù Ãâ·Â
-				System.out.println("´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù.");
-				diff = 1;//´çÃ·½Ã diff °ªÀ» 1·Î º¯°æ
+		for(int j = 0; j<10; j++) {//ì…ë ¥ ìˆ«ìì¤‘ì— ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆëŠ”ì§€ í™•ì¸
+			if(arr[j] == num) {//ì…ë ¥ëœ ìˆ«ìì•ˆì— ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìœ¼ë©´ ë‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤ ì¶œë ¥
+				System.out.println("ë‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤.");
+				diff = 1;//ë‹¹ì²¨ì‹œ diff ê°’ì„ 1ë¡œ ë³€ê²½
 			}
 		}
-		if(diff==0)//diff°ªÀÌ 0ÀÏ °æ¿ì ²Î! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ¾ø½À´Ï´Ù Ãâ·Â
-			System.out.println("²Î! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ¾ø½À´Ï´Ù.");
+		if(diff==0)//diffê°’ì´ 0ì¼ ê²½ìš° ê½! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ì—†ìŠµë‹ˆë‹¤ ì¶œë ¥
+			System.out.println("ê½! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ì—†ìŠµë‹ˆë‹¤.");
 	}
 }
